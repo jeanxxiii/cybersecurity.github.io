@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersécurité</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <!-- Avertissement principal -->
+    <div class="warning">
+        <h2>Alerte de Sécurité</h2>
+        <p>Ne partagez jamais votre mot de passe ou vos identifiants sur des sites non fiables.</p>
+        <p>Vérifiez toujours l'URL du site avant de fournir des informations sensibles.</p>
+        <p>Elle doit correspondre exactement à l'adresse du site auquel vous pensez accéder.</p>
+    </div>
+
+    <br>
+
+    <!-- Informations de l'utilisateur saisis -->
+    <div class="container">
+        <h1>Vous avez inscrit vos identifiants</h1>
+        <p>Votre nom d'utilisateur : <span id="displayUsername"></span></p>
+        <p>Votre mot de passe : <span id="displayPassword"></span></p>
+    </div>
+
+    <br>
+
+    <!-- Section éducative : sensibilisation -->
+    <div class="cyber-info">
+        <h2>Pourquoi la Cybersécurité est Cruciale ?</h2>
+        <p>
+            La cybersécurité est devenue un enjeu majeur dans un monde où la majorité de nos interactions et transactions se font en ligne.
+            Chaque jour, des millions d'utilisateurs sont ciblés par des tentatives de phishing, de vol de données ou d'usurpation d'identité.
+        </p>
+        <h3>Comment protéger vos informations en ligne ?</h3>
+        <ul>
+            <li><strong>Ne partagez jamais votre mot de passe :</strong> Les sites de phishing sont souvent conçus pour ressembler à des sites légitimes.</li>
+            <li><strong>Vérifiez l'URL :</strong> Assurez-vous que l'adresse du site est correcte et sécurisée (elle doit commencer par <code>https://</code>).</li>
+            <li><strong>Activez la double authentification :</strong> Cela ajoute une couche supplémentaire de sécurité à votre compte.</li>
+            <li><strong>Utilisez des mots de passe complexes :</strong> Créez des mots de passe uniques, longs, et difficiles à deviner.</li>
+        </ul>
+        <h3>Les risques d'un mot de passe compromis :</h3>
+        <p>
+            Si votre mot de passe tombe entre de mauvaises mains, il peut être utilisé pour accéder à vos comptes bancaires, réseaux sociaux, ou même professionnels.
+            Cela peut entraîner des pertes financières, un vol d'identité, ou une violation de votre vie privée.
+        </p>
+        <p>
+            <strong>Souvenez-vous :</strong> Votre mot de passe est la clé de vos données personnelles. Soyez vigilant et protégez-le.
+        </p>
+    </div>
+
+    <script>
+        const username = localStorage.getItem("username");
+        const password = localStorage.getItem("password");
+
+        document.getElementById("displayUsername").textContent = username;
+        document.getElementById("displayPassword").textContent = password;
+    </script>
+</body>
+</html>
+
+
+<!--Contact si besoin de modification sur le site (ou le code) : loic.zaercher@estiam.com-->
